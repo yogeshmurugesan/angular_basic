@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="clockApp">
+<head>
+  <title>Clock app</title>
+  <script type="text/javascript" src="../js/angular.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+  <div ng-controller="CurrentTimeController">
+    <h2> One way Data Binding</h2>
+    <p>Current Time: {{date}}</p>
+    <button ng-click="refershTime()">Referesh Time</button>
+    <h2> Two way Data Binding </h2>
+    Enter Something <input type="text" ng-model="userName">
+    <p>{{userName}}</p>
+  </div>
+</body>
+</html>

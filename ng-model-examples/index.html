@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="ngModelExample">
+<head>
+  <title>Clock app</title>
+  <script type="text/javascript" src="../js/angular.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-controller="ngModelExampleController">
+  <h2>ng-model example</h2>
+  <p>TextBox <input type="text" ng-model="textBox"></p>
+  <p>CheckBox <input type="checkbox" ng-model="checkBox"></p>
+  <p>DateBox <input type="date" ng-model="dateBox"></p>
+  <p>RadioBox 
+    <input type="radio" ng-model="radioBox" value="opt1">options1</input>
+    <input type="radio" ng-model="radioBox" value="opt2">options2</input>
+    <input type="radio" ng-model="radioBox" value="opt3">options3</input>
+  </p>
+  <p>{{textBox}}</p>
+  <p>{{checkBox}}</p>
+  <p>{{dateBox}}</p>
+  <p>{{radioBox}}</p>
+</body>
+</html>

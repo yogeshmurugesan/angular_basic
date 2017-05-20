@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="calcApp">
+<head>
+  <title>Clock app</title>
+  <script type="text/javascript" src="../js/angular.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+  <div ng-controller="CalcOperationController as calcCtrl">
+    <p>
+      <input type="text" name="" ng-model="calcCtrl.value1">
+      <span>{{calcCtrl.operator}}</span>
+      <input type="text" name="" ng-model="calcCtrl.value2">
+      <button ng-click="calcCtrl.equalsButtonClick()">=</button>
+      <span>{{calcCtrl.result}}</span>
+    </p>
+    <p>
+      Operations: 
+      <button ng-click="calcCtrl.operationButtonClick('+')">+</button>
+      <button ng-click="calcCtrl.operationButtonClick('-')">-</button>
+      <button ng-click="calcCtrl.operationButtonClick('*')">*</button>
+      <button ng-click="calcCtrl.operationButtonClick('/')">/</button>
+    </p>
+  </div>
+</body>
+</html>
