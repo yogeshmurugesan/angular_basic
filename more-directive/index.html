@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="moreDirectiveApp">
+<head>
+  <title>Clock app</title>
+  <script type="text/javascript" src="../js/angular.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+  <div ng-controller="moreDirectiveController as moreDirective">
+    <h3>Show / Hide</h3>
+    <p>
+      <input type="checkbox" name="" ng-model="moreDirective.checkbox">
+      <span ng-show="moreDirective.checkbox">ng-show</span>
+      <span ng-hide="moreDirective.checkbox">ng-hide</span>
+    </p>
+    <h3>Repeat</h3>
+    <div ng-repeat="user in moreDirective.users">
+      <p><span ng-bind="$index + 1"></span>. Name: {{user.name}} Age: {{user.age}} | First: <span ng-bind="$first"></span></p>
+      <hr>
+    </div>
+  </div>
+</body>
+</html>

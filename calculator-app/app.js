@@ -20,6 +20,9 @@ app.controller('CalcOperationController', function(){
       case "/":
         this.result = value1 / value2;
         break;
+      case "%":
+        this.result = (value1 / 100) * value2;
+        break;
     }
   }
 })
